@@ -26,7 +26,12 @@ class TipoDocumentos extends Migration
                 ->on('datos_personales')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
-          $table->integer('tipo_documento');
+          $table->integer('tipo_documento')->unsigned();
+          $table->foreign('tipo_documento')
+                ->references('id')
+                ->on('tipo_documentos')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
           $table->string('numero_documento',10);
           $table->string('letra',1)->nullable();
           $table->date('fecha_expedicion')->nullable();
