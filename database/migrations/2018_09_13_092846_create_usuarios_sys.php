@@ -26,7 +26,7 @@ class CreateUsuariosSys extends Migration
             $table->string('nombre_usuario',20);
             $table->string('contraseña',16);
             $table->string('email',100);
-            $table->binary('permisos');
+            $table->integer('permisos');
             $table->timestamps();
         });
     }
