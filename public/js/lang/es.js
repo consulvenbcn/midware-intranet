@@ -1,0 +1,21 @@
+jQuery.extend(jQuery.validator.messages, {
+    required: "Esta campo es obligatorio.",
+    remote: "Verifique que el campo es correcto.",
+    email: "Por favor ingrese un correo electronico valido.",
+    url: "Por favor ingrese una URL valida.",
+    date: "Por favor ingrese una fecha.",
+    dateISO: "Por favor ingrese una fecha (ISO).",
+    number: "Por favor ingrese un numero valido.",
+    digits: "Por favor ingrese solo digitos.",
+    creditcard: "Please enter a valid credit card number.",
+    equalTo: "Los valores introducidos no coinciden.",
+    accept: "Por favor ingrese una expresión aceptada.",
+    maxlength: jQuery.validator.format("Por favor no mas de {0} caracteres."),
+    minlength: jQuery.validator.format("Por favor al menos {0} caracteres."),
+    rangelength: jQuery.validator.format("Por favor ingrese entre {0} y {1} caracteres."),
+    range: jQuery.validator.format("El valor agregado debe estar entre {0} y {1}."),
+    max: jQuery.validator.format("El valor agregado debe ser menor o igual que {0}."),
+    min: jQuery.validator.format("El valor agregado debe ser mayor o igual que {0}."),
+    letterswithbasicpunc: "Por favor solo ingrese letras y simbolos de puntuacion basicos",
+    letterwithdot: "Por favor ingrese solo letras y puntos no admite (ñ)"
+});
